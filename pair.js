@@ -20,13 +20,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function GIFTED_MD_PAIR_CODE() {
+        async function LAZACK_MD_PAIRING_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Gifted_Tech = Gifted_Tech({
+            let Pair_Code_By_Mtaju_Grp = Mtaju_Grp({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -56,12 +56,12 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
-               let GIFTED_MD_TEXT = `
-*_Pair Code Connected by Gifted Tech_*
+               let LAZACK_MD_TEXT = `
+*_Pair Code Connected by Lazack-md_*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
-║ *『 WOW YOU CHOOSEN GIFTED-MDv2 』*
+║ *『 WOW YOU CHOOSEN LAZACK_MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚══════════════════════╝
 ╔═════◇
@@ -70,21 +70,21 @@ ______________________________________
 ║❒ *Owner:* _https://wa.me/message/NHCZC5DSOEUXB1_
 ║❒ *Repo:* _https://github.com/Giftedmaurice/gifted-mdV2_
 ║❒ *WaGroup:* _https://chat.whatsapp.com/L0ctUUVLlsrFYwBHApKfew_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaJmfmTDJ6H7CmuBss0o_
-║❒ *Plugins:* _https://github.com/Giftedmaurice/gifted-bot-md-plugins_
+║❒ *WaChannel:* __
+║❒ *Plugins:* __
 ╚══════════════════════╝ 
 _____________________________________
 
 _Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
+ await Pair_Code_By_Mtaju_Grp.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
+        await Pair_Code_By_MTAJU_GRP.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    GIFTED_MD_PAIR_CODE();
+                    LAZACK_MD_PAIRING_CODE();
                 }
             });
         } catch (err) {
@@ -95,6 +95,6 @@ _Don't Forget To Give Star To My Repo_`
          }
         }
     }
-    return await GIFTED_MD_PAIR_CODE()
+    return await LAZACK_MD_PAIR_CODE()
 });
 module.exports = router
