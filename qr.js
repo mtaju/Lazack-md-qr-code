@@ -14,7 +14,7 @@ const { Boom } = require("@hapi/boom");
 const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
 ╔════◇
-║ *『 WOW YOU'VE CHOSEN GIFTED-MDv2 』*
+║ *『 WOW YOU'VE CHOSEN LAZACK MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
