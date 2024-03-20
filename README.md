@@ -33,5 +33,6 @@ Now Deploy
 # `Contributor` 
 <a href="https://github.com/Xcelsama"><img src="https://github.com/Xcelsama.png" width="250" height="250" alt="Xcelsama"/></a>
 
-<a
-href="https://heroku.com/deploy?template=https://github.com/mtaju/Lazack-md-qr-code/edit/main/README.md">
+
+<https://heroku.com/deploy?template=https://github.com/mtaju/Lazack-md-qr-code/edit/main/README.md>
+
